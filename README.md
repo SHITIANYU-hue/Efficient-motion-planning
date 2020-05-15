@@ -9,4 +9,4 @@ In IDM file, we consider the interaction between vehicles, i.e. under this assum
 
 # Refered Paper
 
-\url{https://arxiv.org/abs/1904.08784}
+https://arxiv.org/abs/1904.08784
