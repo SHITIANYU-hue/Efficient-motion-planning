@@ -3,17 +3,17 @@ N = 50; nx = 4; nu = 2; tf = 5; lane_width = 3.75;
 
 %% load data
 load('data1.mat');
-data1 = data;
+data1 = data1;
 load('initial_state1.mat');
-initial_state1 = initial_state;
+initial_state1 = initial_state1;
 load('data2.mat');
 data2 = data;
 load('initial_state2.mat');
-initial_state2 = initial_state;
+initial_state2 = initial_state2;
 load('data3.mat');
 data3 = data;
 load('initial_state3.mat');
-initial_state3 = initial_state;
+initial_state3 = initial_state3;
 data = [data1(1:720);data2(1:1369);data3(1:358)];
 initial_state = [initial_state1(1:720);
     initial_state2(1:1369);initial_state3(1:358)];
@@ -114,9 +114,9 @@ end
 %% train the net
 % net = net;
 net = newff(input,target,6,{'tansig','purelin'},'trainlm');
-net.trainParam.epochs=1000000;%×î´óÑµÁ·´ÎÊı
-net.trainParam.goal=0.00001;%Ä¿±ê×îĞ¡Îó²î
-LP.lr=0.00000001;%Ñ§Ï°ËÙÂÊ
+net.trainParam.epochs=1000000;%æœ€å¤§è®­ç»ƒæ¬¡æ•°
+net.trainParam.goal=0.00001;%ç›®æ ‡æœ€å°è¯¯å·®
+LP.lr=0.00000001;%å­¦ä¹ é€Ÿç‡
 net.trainParam.max_fail=100;  
 net=train(net,input,target);
 
