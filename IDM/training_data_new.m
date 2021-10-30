@@ -4,7 +4,7 @@ N = 50; nx = 4; nu = 2; tf = 5; lane_width = 3.75;
 %% load data
 load('data1.mat');
 data1 = data1;
-load('initial_state1.mat');
+load('initial_state8.mat');
 initial_state1 = initial_state1;
 load('data2.mat');
 data2 = data2;
